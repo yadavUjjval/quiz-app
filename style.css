@@ -1,0 +1,93 @@
+/* Applies to all elements, resets margin and padding, sets font, and ensures consistent box sizing */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Sets background color of the body */
+body{
+    background-color: aqua;
+}
+
+/* Styles the main container of the app */
+.app{
+    background-color: bisque; /* Background color of the quiz box */
+    width: 90%; /* Makes the width of the app responsive */
+    max-width: 600px; /* Sets the maximum width */
+    margin: 100px auto; /* Centers the app on the page */
+    border-radius: 10px; /* Rounds the corners of the app container */
+    padding: 10px; /* Adds padding inside the app container */
+}
+
+/* Styles the main heading */
+.app h1{
+    font-size: 25px; /* Font size of the heading */
+    color: black; /* Text color */
+    font-weight: 600; /* Boldness of the text */
+    border-bottom: 1px solid #333; /* Adds a border below the heading */
+    padding: 30px 10px 30px 20px; /* Adds padding inside the heading */
+}
+
+/* Adds padding to the quiz container */
+.quiz{
+    padding: 20px 0;
+}
+
+/* Styles the quiz question */
+.quiz h2{
+    font-size: 18px; /* Font size of the question */
+    color: rgb(0, 30, 77); /* Text color */
+    font-weight: 600; /* Boldness of the text */
+}
+
+/* Styles the answer buttons */
+.btn{
+    background: #fff; /* White background */
+    color: #222; /* Dark text color */
+    font-weight: 500; /* Slightly bold text */
+    width: 100%; /* Makes buttons span full width */
+    border: 1px solid black; /* Adds a black border */
+    padding: 10px; /* Padding inside buttons */
+    margin: 10px 0; /* Adds space between buttons */
+    text-align: left; /* Aligns text to the left */
+    border-radius: 4px; /* Rounds the corners of buttons */
+    cursor: pointer; /* Changes cursor to pointer (hand) */
+    transition: all 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Changes button style when hovered (only if not disabled) */
+.btn:hover:not(:disabled){
+    background: #222; /* Changes background to dark */
+    color: #fff; /* Changes text color to white */
+}
+
+/* Styles disabled buttons */
+.btn:disabled{
+    cursor: no-drop; /* Changes cursor to "no-drop" */
+}
+
+/* Styles the next button */
+#next-btn{
+    background: #001e4d; /* Dark blue background */
+    color: #fff; /* White text color */
+    font-weight: 500; /* Slightly bold text */
+    width: 150px; /* Fixed width */
+    border: 0; /* Removes border */
+    padding: 10px; /* Padding inside button */
+    margin: 20px auto 0; /* Centers the button */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes cursor to pointer (hand) */
+    display: none; /* Hides the button by default */
+}
+
+/* Styles for the correct answer */
+.correct{
+    background: #9aeabc; /* Light green background for correct answers */
+}
+
+/* Styles for the incorrect answer */
+.incorrect{
+    background: #ff9393; /* Light red background for incorrect answers */
+}
